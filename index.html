@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Analyze your Instagram & TikTok growth. Discover trending hashtags and unlock pro tools to grow faster. Powered by Buzzoid." />
+  <meta name="theme-color" content="#ff5a00" />
+  <title>Buzzoid – Hashtag & Growth Tool</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" href="icons/icon-192x192.png" />
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f7f9fc;
+      color: #1a1a1a;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 2rem;
+      text-align: center;
+    }
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+    p {
+      max-width: 500px;
+      margin-bottom: 1.5rem;
+    }
+    .cta {
+      background: #ff5a00;
+      color: white;
+      border: none;
+      padding: 1rem 2rem;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .cta:hover {
+      background: #e74d00;
+    }
+  </style>
+</head>
+<body>
+  <h1>📈 Boost Your Social Growth</h1>
+  <p>Analyze your Instagram & TikTok engagement. Discover hashtags that work. Unlock advanced tools to grow faster — all in one dashboard.</p>
+  <a class="cta" href="https://buzzoid.fun/signin">Launch Dashboard</a>
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js');
+    }
+  </script>
+</body>
+</html>
