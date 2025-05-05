@@ -5,9 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Analyze your Instagram & TikTok growth. Discover trending hashtags and unlock pro tools to grow faster. Powered by Buzzoid." />
   <meta name="theme-color" content="#ff5a00" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+
   <title>Buzzoid – Hashtag & Growth Tool</title>
+  
   <link rel="manifest" href="manifest.json" />
   <link rel="icon" href="icons/icon-192x192.png" />
+  <link rel="apple-touch-icon" href="icons/icon-192x192.png" />
+
   <style>
     body {
       margin: 0;
@@ -52,7 +58,9 @@
 
   <script>
     if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('sw.js');
+      navigator.serviceWorker.register('sw.js')
+        .then(() => console.log('Service Worker registered'))
+        .catch(err => console.error('Service Worker registration failed:', err));
     }
   </script>
 </body>
